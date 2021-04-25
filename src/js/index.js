@@ -9,5 +9,5 @@ document.querySelector('.btn').addEventListener('click', function () {
 
     window.setTimeout(function () {
         $loader.classList.remove('loader--active')
-    }, 5000)
+    }, 2000)
 })
