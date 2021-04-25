@@ -3,8 +3,19 @@ html(lang='ja')
     head
         meta(charset="utf-8")
         title title
-        link(rel="stylesheet", href="css/index.css",)
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="css/index.css")
     body
+      .cursor
+      .shapes
+        .shape.shape-1
+        .shape.shape-2
+        .shape.shape-3
+      .content
+        h1 SHIKOSAI
+          br
+          | Oct 23 
       .loader.loader--active
         //
           .loader__icon
@@ -16,7 +27,9 @@ html(lang='ja')
           while n < 5
             - n++;
             .loader__tile
-
-      .wrapper
-        button.btn(type="button") Toggle page transition
+      //
+        .wrapper
+          button.btn(type="button") Toggle page transition 
+      
+      script(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js")
       script(src="js/bundle.js")
